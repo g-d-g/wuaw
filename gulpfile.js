@@ -10,7 +10,7 @@ gulp.task('css', function() {
             'bower_components/awesomplete/awesomplete.css'])
     .pipe(uncss({
       html: ['domcopy.html'],
-      ignore: ['div.awesomplete > ul[hidden]', 'div.awesomplete > ul:empty', '.alert-danger']
+      ignore: ['div.awesomplete > ul[hidden]', 'div.awesomplete > ul:empty', '.alert-danger', '.alert-info']
     }))
     .pipe(concatCss("bundle.css"))
     .pipe(minifycss())
