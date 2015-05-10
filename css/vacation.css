@@ -82,6 +82,10 @@
   border-color: #6699cc;
 }
 
+#staff {
+  font-size: 16px;
+}
+
 #alerts {
   position: fixed;
   top: 50px;
