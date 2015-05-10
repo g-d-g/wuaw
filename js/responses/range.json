@@ -1,0 +1,77 @@
+[
+    {
+        "weekNumber": 50,
+        "weekYear": 2015
+    },
+    {
+        "weekNumber": 51,
+        "weekYear": 2015
+    },
+    {
+        "weekNumber": 52,
+        "weekYear": 2015,
+        "checked": [
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            }
+        ]
+    },
+    {
+        "weekNumber": 1,
+        "weekYear": 2016,
+        "checked": [
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            }
+        ]
+    },
+    {
+        "weekNumber": 2,
+        "weekYear": 2016,
+        "checked": [
+            {
+                "check": 1
+            },
+            {
+                "check": 1
+            },
+            {
+                "check": 0
+            },
+            {
+                "check": 0
+            },
+            {
+                "check": 0
+            }
+        ]
+    },
+    {
+        "weekNumber": 3,
+        "weekYear": 2016
+    }
+]

@@ -1,0 +1,224 @@
+/* Custom Bootstrap styles */
+
+.navbar-inverse {
+  background-color: #09306F;
+}
+
+.navbar-inverse, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #09306F;
+  box-shadow: none;
+}
+
+.navbar-inverse .navbar-toggle {
+  background-color: #09306F;
+  border-color: #09306F;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:active {
+  background-color: #09306F;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 80px 33px;
+  background-position: 15px 50%;
+  padding-left: 110px;
+  height: auto;
+}
+
+.navbar-inverse .nav > li > a {
+  color: #fff;
+}
+
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+  color: white !important;
+  background-color: #09306F;
+}
+
+.alert {
+  padding: 10px 15px;
+}
+
+.btn {
+  min-width: 120px;
+}
+
+.btn-primary {
+  background-color: #09306F;
+  border-color: #09306F;
+}
+
+.btn-primary:disabled, .btn-primary:disabled:hover {
+  background-color: #6699cc;
+  border-color: #6699cc;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  pointer-events: all;
+}
+
+.btn-primary:hover {
+  background-color: #006699;
+  border-color: #006699;
+}
+
+.navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+  color: #fff;
+}
+
+.jumbotron {
+  background-color: #9FE6E9;
+  color: #09306f;
+}
+
+.jumbotron small {
+  color: #09306f;
+}
+
+.jumbotron .btn-primary:disabled {
+  background-color: #6699cc;
+  border-color: #6699cc;
+}
+
+#alerts {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+#header {
+  margin-bottom: 30px;
+  line-height: 120%;
+}
+
+.panel-primary > .panel-heading {
+  background-color: #9FE6E9;
+  color: #09306f;
+}
+
+.btn-primary .badge {
+  color: #09306F;
+}
+
+#weeks h3 {
+  margin: 0;
+}
+
+#weeks div[class^="col-"] {
+  margin-bottom: 30px;
+}
+
+#weeks .week {
+  padding: 15px;
+  background-color: #B0CA3B;
+  color: #003300;
+  border-radius: 4px;
+}
+
+#weeks .week a {
+  color: #003300;
+  display: block;
+}
+
+#weeks .week a:hover {
+  text-decoration: none;
+}
+
+#weeks .week.edited {
+  background-color: #F18F24;
+  color: #572903;
+}
+
+#weeks .week.edited a {
+  color: #572903;
+}
+
+#weeks .glyphicon {
+  font-size: 0.8em;
+  float: right;
+  margin-top: 2px;
+}
+
+input[type=checkbox]:checked + span {
+  text-decoration: line-through;
+}
+
+/* Animations */
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#weeks div[class^="col-"], .alert {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -ms-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.alert {
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  -ms-animation-duration: 0.4s;
+  -o-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
