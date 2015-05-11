@@ -174,6 +174,8 @@
 
     // construct json savedata
     var jsonsave = [];
+
+    // change to .week.edited to only send edited weeks
     $('.week form').each(function() {
       var checked = [];
       $(this).find('input[type="checkbox"]').each(function() {
