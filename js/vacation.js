@@ -153,6 +153,12 @@
   $(document).ready(function() {
     $.ajaxSetup({ cache: false });
   });
+  
+  $(window).bind('beforeunload', function(){ 
+    if (!$('#header .badge').is(':empty')) {
+      return 'You have unsaved changes!';
+    }
+  });  
 
   $('#close').click(function() {
     var close = true;
@@ -174,6 +180,8 @@
 
     // construct json savedata
     var jsonsave = [];
+
+    // change to .week.edited to only send edited weeks
     $('.week form').each(function() {
       var checked = [];
       $(this).find('input[type="checkbox"]').each(function() {
