@@ -152,6 +152,12 @@ input[type=checkbox]:checked + span {
   text-decoration: line-through;
 }
 
+@media screen and (max-width: 767px) {
+  .checkbox + .checkbox {
+    margin-top: 10px;
+  }
+}
+
 /* Animations */
 
 @-webkit-keyframes fadeInDown {
