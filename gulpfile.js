@@ -19,7 +19,6 @@ gulp.task('css', function() {
 
 gulp.task('scripts', function() {
   gulp.src(['bower_components/jquery/dist/jquery.min.js',
-            'bower_components/moment/min/moment.min.js',
             'bower_components/awesomplete/awesomplete.js'])
     .pipe(uglify())
     .pipe(concat('bundle.js'))
