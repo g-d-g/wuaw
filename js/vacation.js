@@ -1,5 +1,26 @@
 (function() {
 
+function getDateOfISOWeek(w, y) {
+  var week = [],
+      simple = new Date(y, 0, 1 + (w - 1) * 7),
+      dow = simple.getDay(),
+      ISOweekStart = simple;
+  
+    if (dow <= 4) {
+      ISOweekStart.setDate(simple.getDate() - simple.getDay() + 1);
+    } else {
+      ISOweekStart.setDate(simple.getDate() + 8 - simple.getDay());
+    }
+  
+    for (var i = 0; i < 5; i++) {
+      var startdate = ISOweekStart;
+      var tomorrow = new Date(startdate);
+      tomorrow.setDate(startdate.getDate()+i);
+      week.push(tomorrow.getDate() + '/' + (tomorrow.getMonth()+1));
+    }
+    return week;
+  }
+  
   function Vacation() {
     this.loadStaff();
   }
@@ -135,6 +156,7 @@
 
   Vacation.prototype.checkBoxTemplate = function(week, year, checked) {
     var weekDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    var dates = getDateOfISOWeek(week, year);
     var template = '<form data-week="' + week + '" data-year="' + year + '">';
     for (var w = 0; w <= 4; w++) {
       var setcheck = '';
@@ -142,8 +164,7 @@
         setcheck = 'checked';
       }
       template += '<div class="checkbox"><label>';
-      template += '<input type="checkbox" name="' + w + '" ' + setcheck + '> <span>' + weekDay[w] + ' ' +
-      moment([year]).startOf('isoWeek').week(week).add(w, 'day').format('D/M');
+      template += '<input type="checkbox" name="' + w + '" ' + setcheck + '> <span>' + weekDay[w] + ' ' + dates[w];
       template += '</span></label></div>';
     }
     template += '</form>';
