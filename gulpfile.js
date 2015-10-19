@@ -6,8 +6,8 @@ var uncss = require('gulp-uncss'),
     minifycss = require('gulp-minify-css');
 
 gulp.task('css', function() {
-  gulp.src(['bower_components/bootstrap/dist/css/bootstrap.css',
-            'bower_components/awesomplete/awesomplete.css'])
+  gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css',
+            'node_modules/awesomplete/awesomplete.css'])
     .pipe(uncss({
       html: ['domcopy.html'],
       ignore: ['div.awesomplete > ul[hidden]', 'div.awesomplete > ul:empty', '.alert-danger', '.alert-info']
@@ -18,8 +18,8 @@ gulp.task('css', function() {
 });
 
 gulp.task('scripts', function() {
-  gulp.src(['bower_components/jquery/dist/jquery.min.js',
-            'bower_components/awesomplete/awesomplete.js'])
+  gulp.src(['node_modules/jquery/dist/jquery.min.js',
+            'node_modules/awesomplete/awesomplete.js'])
     .pipe(uglify())
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('./js'))
