@@ -19,6 +19,11 @@
     "url": "https://github.com/dermike/wuaw/issues"
   },
   "homepage": "https://github.com/dermike/wuaw",
+  "dependencies": {
+    "awesomeplete": "git://github.com/LeaVerou/awesomplete.git#gh-pages",
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4"
+  },
   "devDependencies": {
     "gulp-concat": "^2.5.2",
     "gulp": "^3.8.11",
