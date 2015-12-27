@@ -71,6 +71,8 @@
 .jumbotron {
   background-color: #9FE6E9;
   color: #09306f;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .jumbotron small {
